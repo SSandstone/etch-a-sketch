@@ -3,36 +3,46 @@ body {
     padding:0;
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
+    max-width: 986px;
+    margin: 20px;
+}
+
 .container {
-    display:flex;
-    flex-wrap: wrap;
-    width:75%;
-    height:auto;
-    gap:0px;
-    border:1px solid darkblue;
+    display:grid;
+    width:500px;
+    height:500px;
     background-color: aliceblue;
 }
 
-.gridSquare{
-display:flex;
-margin:0px;
-flex:1 1 0px;
-min-width: 1em;
-min-height: 1em;
-border:2px solid darkgray;
-transition: 1s ease-out 0s;
+.gridCell{
+    padding:0px;
+    border:1px solid darkgray;
+    transition: 1s ease-out 0s;
 }
 
-.gridSquare:hover{
-    background-color: darkgoldenrod;
+.gridCell:hover{
+    background-color: tomato;
+}
 
+.colorChanger{
+    background-color: tomato;
 }
 
 .btn{
     margin:10px;
     padding:4px;
+}
+
+.footer{
+    display: flex;
+    margin-top:auto;
 }
