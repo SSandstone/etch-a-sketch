@@ -26,15 +26,19 @@ body {
 .gridCell{
     padding:0px;
     border:1px solid darkgray;
-    transition: 1s ease-out 0s;
+    transition: .3s;
 }
 
-.gridCell:hover{
-    background-color: tomato;
+.colors{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
 }
 
-.colorChanger{
-    background-color: tomato;
+.color{
+    height:2em;
+    width:2em;
 }
 
 .btn{
